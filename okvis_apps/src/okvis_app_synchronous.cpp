@@ -220,6 +220,7 @@ int main(int argc, char **argv)
   okvis::VioParameters parameters;
   vio_parameters_reader.getParameters(parameters);
 
+  /// okvis主程序
   okvis::ThreadedKFVio okvis_estimator(parameters);
 
   PoseViewer poseViewer;
